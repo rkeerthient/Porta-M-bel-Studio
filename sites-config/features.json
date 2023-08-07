@@ -1,8 +1,8 @@
 {
   "features": [
     {
-      "name": "product",
-      "streamId": "skis",
+      "name": "location",
+      "streamId": "my-stream-id-1",
       "templateType": "JS",
       "entityPageSet": {
         "plugin": {}
@@ -11,10 +11,21 @@
   ],
   "streams": [
     {
-      "$id": "skis",
+      "$id": "my-stream-id-1",
+      "fields": [
+        "id",
+        "uid",
+        "meta",
+        "name",
+        "address",
+        "mainPhone",
+        "description",
+        "hours",
+        "slug"
+      ],
       "filter": {
         "entityTypes": [
-          "ce_product"
+          "location"
         ]
       },
       "localization": {
@@ -22,14 +33,7 @@
           "en"
         ],
         "primary": false
-      },
-      "fields": [
-        "name",
-        "c_price",
-        "description",
-        "photoGallery",
-        "slug"
-      ]
+      }
     }
   ]
 }
